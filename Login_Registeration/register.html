@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Login And Register</title>
+    <style>
+        body{
+            margin: 0px;
+            padding:0px;
+            background-image: url('images/flower.jpg');
+            background-position: center;
+            background-attachment:scroll;
+            background-repeat: no-repeat;
+            background-size:cover;
+            height: 90vh;
+        }
+        .container
+        {
+            background-color: rgb(106, 197, 31);
+            width: 40%;
+            height: 80vh;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            margin: 100px 600px;
+            padding: 10px;
+            border-radius: 15px;
+        }
+        tr
+        {
+            margin: 15px 0px;
+            padding: 20px 0px;
+        }
+        td{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="main-content">
+           <h1>Register Here!</h1>
+            <form action="" method="post">
+            
+                <table align="center">
+                    <tr>
+                        <td>Name:</td>
+                        <td><input type="text" name="name" placeholder="enter name" required></td>
+                    </tr>
+                    <tr>
+                        <td>Email:</td>
+                        <td><input type="text" name="email" placeholder="enter email" required></td>
+                    </tr>
+                    <tr>
+                        <td>Password:</td>
+                        <td><input type="text" name="password" placeholder="enter password" required></td>
+                    </tr>
+                    <tr>
+                        <td>Confirm Password:</td>
+                        <td><input type="text" name="cpassword" placeholder="enter confirm password" required></td>
+                    </tr>
+                    <tr>
+                        <td>Gender:</td>
+                        <td>
+                        <input type="radio" name="r1" >Male
+                        <input type="radio" name="r1" >Female
+                        <input type="radio" name="r1" >Other
+                    </td>
+                    </tr>
+                    <tr>
+                        <td>Language Known:</td>
+                        <td>
+                        <input type="checkbox" name="l1" >English
+                        <input type="checkbox" name="l2" >Hindi
+                        <input type="checkbox" name="l3" >Other
+                    </td>
+                    </tr>
+                    <tr>
+                        <td>City:</td>
+                        <td>
+                        <select name="city" id="">
+                            <option >--select--</option>
+                            <option value="Delhi">Delhi</option>
+                            <option value="Mumbai">Mumbai</option>
+                            <option value="Kolkata">Kolkata</option>
+                            <option value="Patna">Patna</option>
+                            <option value="Bangalore">Bangalore</option>
+                        </select>
+                    </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="submit" name="btn" value="Register"></td>
+                        
+                    </tr>
+                    <tr >
+                        <td colspan="2">Already Account? <a href="Task3_Login.html">Login Here!</a></td>                  
+                    </tr>
+                </table>
+            </form>
+
+        </div>
+    </div>
+</body>
+</html>

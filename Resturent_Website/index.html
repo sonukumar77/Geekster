@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Verma Resturent</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+
+      body {
+        margin: 0px;
+        padding: 0px;
+      }
+
+      .header {
+        width: 100%;
+        height: 70vh;
+        background-image: url("images/food.jpg");
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* opacity: 0.5; */
+      }
+
+      .navbar {
+        width: 100%;
+        height: 10vh;
+        background-color: rgb(230, 18, 18);
+        color: white;
+        position: fixed;
+        top: 0px;
+      }
+
+      .navbar li {
+        float: right;
+        list-style: none;
+        padding: 10px;
+        margin: 10px;
+        font-size: 25px;
+        align-items: center;
+      }
+
+      #logo {
+        float: left;
+      }
+      #logo:hover {
+       
+        color: green;
+      }
+      
+
+      ul li a {
+        text-decoration: none;
+        color: yellow;
+      }
+      ul li a:hover {
+        /* text-decoration: none; */
+        color: green;
+      }
+
+      .search-bar {
+        width: 100%;
+        height: 20vh;
+      }
+
+      .search-bar input {
+        top: 20%;
+        left: 50%;
+        /* position: fixed; */
+        padding: 10px 30px;
+      }
+
+      .our-products {
+        text-align: center;
+      }
+
+      .cards {
+        width: 100%;
+      }
+
+      .card {
+        width: 20%;
+        height: 55vh;
+        border: 3px solid green;
+        border-radius: 5px;
+        margin: 25px;
+        float: left;
+      }
+
+      .card-body {
+        padding: 10px;
+      }
+
+      .card-body h3 {
+        text-align: center;
+      }
+
+      .card-body button {
+        float: right;
+        background-color: yellow;
+        color: green;
+        border: none;
+        padding: 5px;
+      }
+
+      .vision-mission-div {
+        width: 100%;
+        height: 90vh;
+        background-color: aliceblue;
+        /* background-color: blue; */
+      }
+
+      .vision-div {
+        width: 50%;
+        height: 60%;
+        background-color: brown;
+        float: left;
+      }
+
+      .vision-div .btn {
+        /* width: 20px; */
+
+        outline: none;
+        background-color: yellow;
+        color: brown;
+        border: none;
+        margin-right: 0px 20px;
+        padding: 20px;
+      }
+
+      .mission-div {
+        width: 50%;
+        height: 60%;
+        background-color: rgb(143, 131, 131);
+        float: right;
+      }
+
+      .container4 {
+        width: 100%;
+        height: 80vh;
+        /* background-image: url("images/landingImage.jpg"); */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url("images/landingImage.jpg");
+        background-attachment: fixed;
+        background-size: cover;
+        /* background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+          url("images/landingImage.jpg");
+        background-size: 100% 100%; */
+        display: flex;
+
+        align-items: center;
+        color: wheat;
+      }
+      .container4-content1 {
+        width: 60%;
+        height: 50vh;
+        /* background-color: yellow; */
+        color: yellow;
+        padding: 30px 50px;
+      }
+
+      .container4-content1 h3 {
+        font-size: 30px;
+        font-weight: 1500;
+        margin: 10px;
+      }
+      .container4-content1 p {
+        font-size: 15px;
+        font-weight: 500;
+        margin: 10px;
+        line-height: 20px;
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));        
+        background-size: 100% 100%;
+      }
+
+      .container4-content1 button {
+        font-size: 20px;
+        margin: 10px;
+        padding: 10px 20px;
+        background-color: brown;
+        color: yellow;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+      .container4-content2 {
+        width: 40%;
+        height: 50vh;
+        background-color: rgb(230, 18, 3);
+        padding: 30px 50px;
+      }
+      .container4-content2 h2 {
+        font-size: 30px;
+        font-weight: 1500;
+        margin: 10px;
+      }
+      .container4-content2 p {
+        font-size: 15px;
+        font-weight: 500;
+        margin: 10px;
+        line-height: 20px;
+      }
+      .container4-content2 input {
+        font-size: 15px;
+        font-weight: 500;
+        margin: 10px;
+        padding: 10px;
+        width: 90%;
+        line-height: 20px;
+        display: flex;
+      }
+      .container4-content2 button {
+        font-size: 20px;
+        margin: 10px;
+        padding: 10px 20px;
+        background-color: black;
+        color: yellow;
+        border: none;
+     
+        cursor: pointer;
+      }
+
+      .bottom-navbar {
+        width: 100%;
+        height: 50vh;
+        background-color: #444;
+        color: white;
+        display: flex;
+        justify-content: center;
+      }
+      .col {
+        width: 33.3%;
+        /* height: 40vh; */
+        /* background-color: red; */
+        margin: 10px 10px;
+        padding: 10px 10px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+      }
+      .col h2 {
+        line-height: 50px;
+      }
+      .col ul li {
+        flex-direction: column;
+        list-style: none;
+        padding: 10px 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="navbar">
+          <ul>
+            <li id="logo">FOODIES JUNCTION</li>
+            <li><a href="">Foods</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Contact Us</a></li>
+            <li><a href="">Sign in</a></li>
+            <li><a href="">Log in</a></li>
+          </ul>
+        </div>
+
+        <!-- <div class="search-bar">
+                <input type="text">
+            </div> -->
+      </div>
+
+      <div class="our-products">
+        <h1><u>Our Products</u></h1>
+      </div>
+
+      <div class="cards">
+        <div class="card">
+          <img src="images/pizza2.jpg" alt="" width="100%" height="200px" />
+          <div class="card-body">
+            <h3 style="text-align: center">Pizza</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
+              dolore?
+            </p>
+            <button>Add in Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="cards">
+        <div class="card">
+          <img src="images/pizza3.jpg" alt="" width="100%" height="200px" />
+          <div class="card-body">
+            <h3 style="text-align: center">Pizza</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
+              dolore?
+            </p>
+            <button>Add in Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="cards">
+        <div class="card">
+          <img src="images/piza1.jpg" alt="" width="100%" height="200px" />
+          <div class="card-body">
+            <h3 style="text-align: center">Pizza</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
+              dolore?
+            </p>
+            <button>Add in Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="cards">
+        <div class="card">
+          <img src="images/pizza4.jpg" alt="" width="100%" height="200px" />
+          <div class="card-body">
+            <h3 style="text-align: center">Pizza</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
+              dolore?
+            </p>
+            <button>Add in Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="cards">
+        <div class="card">
+          <img src="images/pizza2.jpg" alt="" width="100%" height="200px" />
+          <div class="card-body">
+            <h3 style="text-align: center">Pizza</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
+              dolore?
+            </p>
+            <button>Add in Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="cards">
+        <div class="card">
+          <img src="images/pizza2.jpg" alt="" width="100%" height="200px" />
+          <div class="card-body">
+            <h3 style="text-align: center">Pizza</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
+              dolore?
+            </p>
+            <button>Add in Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="cards">
+        <div class="card">
+          <img src="images/pizza2.jpg" alt="" width="100%" height="200px" />
+          <div class="card-body">
+            <h3 style="text-align: center">Pizza</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
+              dolore?
+            </p>
+            <button>Add in Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="cards">
+        <div class="card">
+          <img src="images/pizza2.jpg" alt="" width="100%" height="200px" />
+          <div class="card-body">
+            <h3 style="text-align: center">Pizza</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
+              dolore?
+            </p>
+            <button>Add in Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="our-products">
+        <h1><u>Our mission And Vision</u></h1>
+      </div>
+
+      <div class="vision-mission-div">
+        <div class="vision-div">
+          <h1 style="text-align: center">VISION</h1>
+          <p style="padding: 20px">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Reprehenderit adipisci voluptatum obcaecati, dolorem aut inventore
+            quae et fugiat deserunt qui rerum accusamus tempora reiciendis ut
+            dicta atque, quod corporis esse illum omnis doloribus tenetur at.
+            Quod ipsa nulla rem quidem libero fugiat atque, ullam hic eum!
+            Deleniti itaque eveniet ad?
+          </p>
+          <button style="padding: 20px">Read More</button>
+        </div>
+        <div class="mission-div">
+          <h1 style="text-align: center">MISSION</h1>
+          <p style="padding: 20px">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. In, maiores
+            temporibus accusamus modi hic enim quod blanditiis veritatis quos
+            excepturi, quo magni molestias molestiae voluptates, illum nemo
+            tempora debitis? Ipsa fugit minima dolor veniam, impedit dicta nihil
+            ut rem sed atque illum autem quo laboriosam fuga culpa accusantium
+            omnis dolorem!
+          </p>
+          <button style="padding: 20px">Read More</button>
+        </div>
+      </div>
+
+      <div class="container4">
+        <div class="container4-content1">
+          <h3>Do You Face Any Problem?</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+            fugit animi facilis expedita, incidunt sint totam temporibus hic
+            nemo laudantium aut modi doloribus explicabo delectus? Expedita odit
+            sed consequuntur eum?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci id
+            et odit repudiandae, maiores excepturi quae exercitationem
+            perferendis veritatis, ab a vitae soluta eveniet. Ipsa.
+          </p>
+          <button>Learn More</button>
+        </div>
+        <div class="container4-content2">
+          <h2>Write To Us Here</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+            blanditiis veritatis facilis cumque alias atque aliquid delectus,
+            autem voluptatem, ipsam magnam distinctio! Optio doloribus dolores
+            officia deserunt corrupti, possimus similique.
+          </p>
+          <input type="text" placeholder="Enter Name" />
+          <input type="text" placeholder="Enter Email" />
+          <button>Submit</button>
+        </div>
+      </div>
+
+      <div class="bottom-navbar">
+        <div class="col">
+          <h2>Contact Us</h2>
+          <ul>
+            <li>
+              Street No. 123, Near kali mandir, Hazaribagh- 825311,
+              Jharkhand,India
+            </li>
+            <li>8092059340</li>
+            <li>skv@gmail.com</li>
+          </ul>
+        </div>
+        <div class="col">
+          <h2>Important Links</h2>
+          <ul>
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+            <li><a href="#">Link 4</a></li>
+            <li><a href="#">Link 5</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <h2>Quick Links</h2>
+          <ul>
+            <li><a href="#">Quick link 1</a></li>
+            <li><a href="#">Quick link 2</a></li>
+            <li><a href="#">Quick Link 3</a></li>
+            <li><a href="#">Quick Link 4</a></li>
+            <li><a href="#">Quick Link 5</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <h2>Our Location</h2>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117223.79371964115!2d85.25128584864406!3d23.343189225528377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f4e104aa5db7dd%3A0xdc09d49d6899f43e!2sRanchi%2C%20Jharkhand!5e0!3m2!1sen!2sin!4v1635571160635!5m2!1sen!2sin"
+            width="300"
+            height="180"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+
+      <div class="footer">
+        <center>All Right Reserved 2021</center>
+      </div>
+    </div>
+  </body>
+</html>
