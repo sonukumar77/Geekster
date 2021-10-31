@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Insta Post</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      background-color: rgba(214, 236, 236, 0.911);
+    }
+
+    .containerWrapper {
+      width: 25%;
+      height: 98vh;
+      font-size: 20px;
+      background-color: white;
+
+    }
+
+    .header {
+      width: 100%;
+      height: 40px;
+      /* background-color: red; */
+      display: flex;
+      justify-content: space-between;
+
+    }
+
+    .header span {
+      flex-direction: row;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+
+    .sub-header {
+      width: 100%;
+      height: 40px;
+      /* background-color: brown; */
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .sub-header span {
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      padding-right: 5px;
+    }
+
+    .sub-header img {
+      display: inline-block;
+      border-radius: 50%;
+
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+
+      height: 35px;
+      width: 35px;
+      justify-content: center;
+      align-items: center;
+      /* padding: 10px 5px; */
+      margin-left: 10px;
+  
+    }
+
+    #username {
+      padding-left: 2px;
+      font-size: 15px;
+
+    }
+
+    .post {
+      width: 100%;
+      height: 50vh;
+      background-color: aliceblue;
+    }
+
+    .post img {
+      width: 100%;
+      height: 100%;
+    }
+
+    .utility-icon {
+      width: 100%;
+      height: 20px;
+      /* background-color: black; */
+      display: flex;
+      padding: 5px;
+    }
+
+    .utility-icon span {
+      padding: 3px;
+
+    }
+
+    .utility-icon .sub-icon {
+      display: flex;
+      justify-content: right;
+      float: right;
+    }
+
+    .liked-by {
+      width: 100%;
+      height: 30px;
+      /* background-color: yellow;       */
+
+    }
+
+    .liked-by {
+      font-size: 15px;
+    }
+
+    .liked-by p {
+      padding-left: 10px;
+    }
+
+    .description {
+      width: 100%;
+      height: 40px;
+      /* background-color: burlywood;         */
+
+    }
+
+    .description p {
+      padding: 0px 10px;
+      font-size: 15px;
+      margin-top: 0px;
+
+    }
+
+    .bottom-navbar {
+      width: 100%;
+      height: 50px;
+      /* background-color: red; */
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .bottom-navbar span {
+      justify-items: center;
+      align-items: center;
+      padding: 10px 3px 0px 3px;
+    }
+
+    hr {
+      height: 1px;
+      background-color: #ccc;
+      border: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="containerWrapper">
+    <div class="header">
+      <span class="material-icons"> photo_camera </span>
+      <img src="images/download.png" alt="insta image" />
+      <span class="material-icons"> send </span>
+
+    </div>
+    <hr>
+    <div class="sub-header">
+      <img src="images/pic.jpg" alt="profile-picture">
+      <span id="username">Sonu Kumar</span>
+      <span class="material-icons">
+        more_horiz
+      </span>
+
+    </div>
+    <div class="post">
+      <img src="images/pizza3.jpg" alt="post-image">
+    </div>
+    <div class="utility-icon">
+      <span class="material-icons">
+        favorite_border
+      </span>
+      <span class="material-icons">
+        maps_ugc
+      </span>
+
+      <span class="material-icons">
+        ios_share
+      </span>
+
+      <div class="sub-icon">
+        <span class="material-icons">
+          bookmark_border
+        </span>
+      </div>
+
+    </div>
+    <div class="liked-by">
+      <p><b>like by sonu and thousand by others</b></p>
+    </div>
+    <div class="description">
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi, ad!</p>
+    </div>
+    <hr>
+    <div class="bottom-navbar">
+      <span class="material-icons">
+        home
+      </span>
+      <span class="material-icons">
+        search
+      </span>
+      <span class="material-icons">
+        add_circle_outline
+      </span>
+      <span class="material-icons">
+        favorite_border
+      </span>
+      <span class="material-icons">
+        person
+      </span>
+    </div>
+  </div>
+</body>
+
+</html>
