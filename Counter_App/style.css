@@ -1,0 +1,57 @@
+body{
+    background-color: blueviolet;
+}
+h1{
+   text-align: center;
+  font-size: 5rem;
+  color: yellow;
+ 
+}
+.note{
+   display: flex;
+   justify-content: center;
+
+
+}
+.note p{
+   color: rgb(151, 56, 56);
+   font-weight: 200;
+   font-weight: bold;
+   font-size: 25px;
+   
+}
+ol li{
+   color: yellow;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    
+}
+
+button{
+    margin: 0px 10px;
+    padding: 15px;
+    font-size: 25px;
+}
+
+#plusButton{
+    background-color: green;
+    color: white;
+    outline: none;
+  
+}
+#minusButton{
+    background-color: red;
+    color: white;
+    outline: none;
+  
+}
+input[type="text"]
+{
+    width: 200px;
+    padding: 15px;
+    font-size: 25px;
+}
