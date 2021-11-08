@@ -1,0 +1,42 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background: url('https://cdn.pixabay.com/photo/2020/08/11/15/23/tree-5480239_1280.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+html,body{
+    display: grid;
+    height: 100%;
+    place-items:center;
+}
+.wrapper{
+    height: 100px;
+    width: 370px;
+    background-color: brown;
+    border-radius: 10px;
+}
+.wrapper .display{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: blueviolet;
+    height: 85px;
+    width: 345px;
+    text-align: center;
+}
+
+.wrapper .display #time{
+    line-height: 85px;
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 2px;
+  
+}
