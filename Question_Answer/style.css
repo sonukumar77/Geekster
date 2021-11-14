@@ -1,0 +1,65 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Times New Roman", Times, serif;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("https://images.pexels.com/photos/2131784/pexels-photo-2131784.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    min-height: 90vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .container {
+    max-height: 800px;
+  }
+  .container .contentBox {
+    position: relative;
+    margin: 15px 20px;
+  }
+  .container .contentBox .label {
+    width: 50%;
+    margin: 0px auto;
+    position: relative;
+    padding: 15px;
+    background-color: aqua;
+    cursor: pointer;
+    color: red;
+    letter-spacing: 2px;
+    word-spacing: 1px;
+  }
+  .container .contentBox .label::before {
+    content: "+";
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+  }
+  .container .contentBox.active .label::before {
+    content: "-";
+  }
+  .container .contentBox .content {
+    width: 50%;
+    margin: 0px auto;
+    position: relative;
+    background-color: white;
+    height: 0px;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow-y: auto;
+  }
+  .container .contentBox.active .content {
+    height: 150px;
+    padding: 10px;
+  }
+  h1 {
+    text-align: center;
+    font-family: "Petemoss", cursive;
+    font-size: 3rem;
+    letter-spacing: 2px;
+  }
