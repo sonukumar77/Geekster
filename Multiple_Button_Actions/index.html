@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom Manupulation</title>
+    <style>
+      body {
+        background: url("https://images.pexels.com/photos/552791/pexels-photo-552791.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+      }
+      div {
+        width: 400px;
+        padding: 20px;
+        margin: 200px auto;
+        box-shadow: 0 0 20px black;
+      }
+    </style>
+    <script>
+      function fnMng() {
+        var btnMngRef = document.querySelector("#btnMng");
+        var headerRef = document.getElementById("header1");
+        var btnName = btnMngRef.innerText;
+        headerRef.innerText = btnName;
+        headerRef.style.color = "green";
+      }
+      function fnAfnoon() {
+        var btnMngRef = document.querySelector("#btnAfnoon");
+        var headerRef = document.getElementById("header1");
+        var btnName = btnMngRef.innerText;
+        headerRef.innerText = btnName;
+        headerRef.style.color = "green";
+      }
+      function fnEvng() {
+        var btnMngRef = document.querySelector("#btnEvng");
+        var headerRef = document.getElementById("header1");
+        var btnName = btnMngRef.innerText;
+        headerRef.innerText = btnName;
+        headerRef.style.color = "green";
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <h2><span id="header1">Welcome</span>&nbsp;&nbsp;! Sonu Verma</h2>
+      <!-- <p id="header1">kjbjkk</p> -->
+      <button id="btnMng" onclick="fnMng()">Good Morning</button>
+      <button id="btnAfnoon" onclick="fnAfnoon()">Good Afternoon</button>
+      <button id="btnEvng" onclick="fnEvng()">Good Evening</button>
+    </div>
+  </body>
+</html>
