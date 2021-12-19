@@ -1,0 +1,17 @@
+.container{
+    border: 3px solid green;
+    width: 200px;
+    height: 30vh;
+    margin: 200px auto;
+}
+.circle{
+    border: 3px solid rgb(0, 13, 128);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(248, 213, 17);
+}
+h2{
+    text-align: center;
+   
+}
