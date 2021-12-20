@@ -1,0 +1,41 @@
+body {
+    background: url("https://images.pexels.com/photos/675267/pexels-photo-675267.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+
+  }
+        table{
+            border: 3px solid rgb(255, 230, 0);
+            width: 1000px;
+            height: 100%;
+            margin: 50px auto;
+        }
+        tr{
+            text-align: right;
+           
+            
+        }
+        th{
+            font-size: 30px;
+            background-color: blueviolet;
+            color: white;
+            padding: 15px 20px;
+        }
+        td{
+            font-size: 20px;
+            padding: 15px 20px;
+        }
+        tr:nth-child(even){
+            background-color: aquamarine;
+        }
+        tr:nth-child(odd){
+            background-color: rgb(197, 131, 32);
+        }
+        h1{
+            text-align: center;
+            font-size: 4rem;
+            color: pink;
+        }

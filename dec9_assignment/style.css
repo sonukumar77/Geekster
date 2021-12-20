@@ -1,0 +1,18 @@
+.container{
+    width: 600px;
+    height: 60vh;
+    background-color: antiquewhite;
+    margin: auto;
+    text-align: center;
+   
+    
+}
+.section{
+    display:flexbox;
+    justify-content: center;
+    align-items: center;
+  padding-top: 100px;
+}
+body{
+    background-color: rgb(161, 106, 161);
+}
