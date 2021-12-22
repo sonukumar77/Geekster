@@ -1,0 +1,36 @@
+body{
+    background:url('https://images.pexels.com/photos/547114/pexels-photo-547114.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+div{
+    background-color:khaki;
+    color: blue;
+    margin-top: 150px;
+    margin-left: 400px;
+    width: 40vw;
+    height: 300px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+h3{
+    color: brown;
+}
+
+input{
+    
+    width: 200px;
+    height: 30px;
+    font-size: 25px;
+    padding-left: 10px;
+}
+button{
+    padding: 10px 10px 4px 10px;
+    font-size: 15px;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+
+}
