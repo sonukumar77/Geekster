@@ -9,23 +9,28 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
+    <div class="full-img-container" id="full-img-container">
+        <h6>To Close click anywhere in body or on Cross icon</h6>
+        <img src="img/menu-pizza.jpg" id="full-img" alt="">
+        <span onclick="closeFullImg()" >X</span>
+
+    </div>
         <h1>My Gallery</h1>
         <div class="gallery-box">
-            <img src="img/burger.jpg" alt="">
-            <img src="img/m2.jpg" alt="">
-            <img src="img/m3.jpg" alt="">
-            <img src="img/m5.JPG" alt="">
-            <img src="img/m7.jpg" alt="">
-            <img src="img/menu-burger.jpg" alt="">
-            <img src="img/menu-momo.jpg" alt="">
-            <img src="img/menu-pizza.jpg" alt="">
-            <img src="img/pizza.jpg" alt="">
-            <img src="img/team.jpg" alt="">
-            <img src="img/momo.jpg" alt="">
-            <img src="img/team1.jpg" alt="">
+            <img src="img/burger.jpg" alt="" onclick="openFullImg(this.src)">
+            <img src="img/m2.jpg" alt="" onclick="openFullImg(this.src)">
+            <img src="img/m3.jpg" alt="" onclick="openFullImg(this.src)">
+            <img src="img/m5.JPG" alt="" onclick="openFullImg(this.src)">
+            <img src="img/m7.jpg" alt="" onclick="openFullImg(this.src)">
+            <img src="img/menu-burger.jpg" alt="" onclick="openFullImg(this.src)">
+            <img src="img/menu-momo.jpg" alt="" onclick="openFullImg(this.src)">
+            <img src="img/menu-pizza.jpg" alt="" onclick="openFullImg(this.src)">
+            <img src="img/pizza.jpg" alt="" onclick="openFullImg(this.src)">
+            <img src="img/team.jpg" alt="" onclick="openFullImg(this.src)">
+            <img src="img/momo.jpg" alt="" onclick="openFullImg(this.src)">
+            <img src="img/team1.jpg" alt="" onclick="openFullImg(this.src)">
         </div>
-    </div>
+  
     <script src="script.js"></script>
 </body>
 </html>
