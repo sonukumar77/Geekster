@@ -8,11 +8,11 @@ let delete_task = function(event){
   let elem=document.getElementById(item_id);
   elem.remove(); // removing element from dom
 
-  let arr=id.split("_");  // removing element from array
+  let arr=id.split("_");  
   let index=arr[1];
   console.log(index);
 
-  tasks.splice(index,1);
+  tasks.splice(index,1); // removing element from array
   
 }
 
