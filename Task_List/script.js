@@ -6,9 +6,9 @@ let delete_task = function(event){
   let id=event.target.id;
   let item_id=`li_${id}`;
   let elem=document.getElementById(item_id);
-  elem.remove();
+  elem.remove(); // removing element from dom
 
-  let arr=id.split("_");
+  let arr=id.split("_");  // removing element from array
   let index=arr[1];
   console.log(index);
 
